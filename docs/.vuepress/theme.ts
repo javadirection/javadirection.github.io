@@ -3,10 +3,13 @@ import navbar from "./navbar";
 import sidebar from "./sidebar";
 
 export default hopeTheme({
+  // 纯净模式
   pure: true,
   
+  // 当前网站部署到的域名。
   hostname: "https://blog.lbin.top",
 
+  // 文章显示的默认作者
   author: {
     name: "lbin",
     url: "https://blog.lbin.top",
@@ -26,7 +29,7 @@ export default hopeTheme({
   // sidebar
   sidebar: sidebar,
 
-  footer: "默认页脚",
+  footer: '<a target="_blank" href="https://beian.miit.gov.cn">浙ICP备2021004144号</a>|主题:<a href="https://vuepress-theme-hope.github.io/v2/" target="_blank">VuePress Theme Hope</a>',
 
   displayFooter: true,
 
@@ -38,12 +41,6 @@ export default hopeTheme({
       Gitee: "https://gitee.com/liqibi",
       GitHub: "https://github.com/javadirection",
       Zhihu: "https://www.zhihu.com/people/mo-liao-24-73",
-    },
-  },
-
-  encrypt: {
-    config: {
-      "/guide/encrypt.html": ["1234"],
     },
   },
 
